@@ -26,8 +26,13 @@ button
   cursor: pointer
 
   &:disabled
-    opacity: 0.4
     cursor: not-allowed
+
+label
+  display: block
+
+input
+  font-family: $ff-roboto
 
 img
   display: block
@@ -42,10 +47,10 @@ span
   display: inline-block
 
 ::-webkit-input-placeholder // sass-lint:disable-line no-vendor-prefixes
-  color: rgba($c-white, 0.4)
+  color: rgba($c-black, 0.4)
 
 ::-moz-placeholder // sass-lint:disable-line no-vendor-prefixes
-  color: rgba($c-white, 0.4)
+  color: rgba($c-black, 0.4)
 
 ::-ms-input-placeholder // sass-lint:disable-line no-vendor-prefixes
-  color: rgba($c-white, 0.4)
+  color: rgba($c-black, 0.4)
