@@ -1,0 +1,16 @@
+@mixin fs($fs, $lh) {
+  font-size: #{$fs};
+  line-height: #{$lh};
+}
+
+.fs-24 {
+  @include fs(nth($fs-24, 1), nth($fs-24, 2));
+}
+
+.fs-15 {
+  @include fs(nth($fs-15, 1), nth($fs-15, 2));
+}
+
+.fs-12 {
+  @include fs(nth($fs-12, 1), nth($fs-12, 2));
+}

@@ -1,0 +1,31 @@
+@import "~styles/vars/other"
+
+// Add leading and/or trailing space in .pug
+.space
+  &::before,
+  &::after
+    content: "\00a0"
+
+.space-left
+  &::before
+    content: "\00a0"
+
+.space-right
+  &::after
+    content: "\00a0"
+
+.list-reset
+  margin-top: 0
+  margin-bottom: 0
+  padding-left: 0
+  list-style: none
+
+.pointer
+  cursor: pointer
+
+  &:disabled
+    cursor: not-allowed
+
+.transition
+  transition-duration: $transition-duration
+  transition-timing-function: $transition-function
