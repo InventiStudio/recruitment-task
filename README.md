@@ -4,7 +4,7 @@
   <br>
 </p>
 
-# [InventiStudio](https://inventi.studio) recruitment task
+# [InventiStudio](https://inventi.studio) Front-end recruitment task
 
 Hello Stranger!
 
