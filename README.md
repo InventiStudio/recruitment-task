@@ -14,6 +14,7 @@ Getting right to it — the main purpose of this task it to check out your HTML,
 - use [Vuejs](https://vuejs.org/) UI library with it's related ecosystem parts like Vuex and Vue-Router,
 - provide the best possible User Experience (being strict with the designs, responsiveness, hover/focus states of interactive elements — everything to your liking and ideas),
 - write a code that follows project's guidelines (e.g linters).
+Feel free to open an issue if you got any questions or sugestions!
 
 Once it's ready, send us a repository link at [hello@inventi.studio](mailto:hello@inventi.studio)!
 
