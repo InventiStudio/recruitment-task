@@ -29,6 +29,7 @@
 <script>
   import { mapActions } from 'vuex'
   import { required, email } from 'vuelidate/lib/validators'
+  import store from 'src/store'
 
   export default {
     name: 'SignIn',
@@ -52,6 +53,9 @@
     validations: {
       email: { required, email },
       password: { required },
+    },
+    created() {
+      console.log('store logged',store.getters["auth/isLoggedIn"]);
     },
   }
 </script>
