@@ -10,6 +10,12 @@ const routes = [
     name: 'SignIn',
     component: () => import(/* webpackChunkName: "sign-in" */ 'src/views/SignIn'),
   },
+  {
+    // path: '/wallet',
+    path: '/wallet',
+    name: 'Wallet',
+    component: () => import(/* webpackChunkName: "logged" */ 'src/views/Wallet'),
+  },
 ]
 
 const router = new Router({

@@ -6,7 +6,7 @@
   "private": true,
   "main": "src/main.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --history-api-fallback",
     "build": "node build/build.js",
     "start": "node build/prod.js",
     "lint:sass": "sass-lint --config .sass-lint.yml -v -q",
