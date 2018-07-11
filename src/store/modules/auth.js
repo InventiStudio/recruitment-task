@@ -16,6 +16,9 @@ const mutations = {
   LOGIN(state) {
     state.isLoggedIn = true
   },
+  LOGOUT(state) {
+    state.isLoggedIn = false
+  }
 }
 
 const actions = {
@@ -28,10 +31,23 @@ const actions = {
       api.setHeader('x-auth-token', apiToken)
       if (!lsToken) {
         commit('LOGIN')
-        // router.push({ name: 'Wallet' })
+        router.push({ name: 'Wallet' })
       }
     } catch (err) {
       if (lsToken) ls.remove(STORAGE_AUTH_TOKEN)
+      throw err
+    }
+  },
+  async logout({ commit }) {
+    try {
+      const lsToken = ls.get(STORAGE_AUTH_TOKEN)
+      if (lsToken) await api.delete(`/sessions/${lsToken}`)
+      ls.remove(STORAGE_AUTH_TOKEN)
+      api.setHeader('x-auth-token', null)
+      commit('LOGOUT')
+      router.push({ name: 'SignIn' })
+      window.location.reload()
+    } catch (err) {
       throw err
     }
   },
