@@ -1,5 +1,4 @@
 import ls from 'local-storage'
-import store from 'src/store'
 import router from 'src/router'
 import { STORAGE_AUTH_TOKEN } from 'src/constants'
 import api from 'src/services/api'
@@ -18,7 +17,7 @@ const mutations = {
   },
   LOGOUT(state) {
     state.isLoggedIn = false
-  }
+  },
 }
 
 const actions = {
@@ -54,9 +53,9 @@ const actions = {
 }
 
 export default {
-    namespaced: 'auth',
-    state,
-    getters,
-    mutations,
-    actions,
+  namespaced: 'auth',
+  state,
+  getters,
+  mutations,
+  actions,
 }

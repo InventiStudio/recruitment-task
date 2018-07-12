@@ -9,18 +9,13 @@ const routes = [
   {
     path: '/wallet',
     name: 'Wallet',
-    component(resolve) {
-      require(['src/views/Wallet'], resolve)
-    },
+    component: () => import('src/views/Wallet'),
   },
   {
     path: '/',
     name: 'SignIn',
-    component(resolve) {
-      require(['src/views/SignIn'], resolve)
-    },
+    component: () => import(/* webpackChunkName: "sign-in" */ 'src/views/SignIn'),
   },
-  
 ]
 
 const router = new Router({

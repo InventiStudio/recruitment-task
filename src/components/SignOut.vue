@@ -5,23 +5,18 @@
 
 <script>
   import { mapActions } from 'vuex'
-  import { STORAGE_AUTH_TOKEN } from 'src/constants'
-  import api from 'src/services/api' 
-  import router from 'src/router'
- 
-
 
   export default {
     name: 'SignOut',
     data: () => ({
     }),
-     methods: {
+    methods: {
       ...mapActions({
         logout: 'auth/logout',
       }),
       async signOut() {
-        // need to add corrent req
-          this.logout()
+        // need to add correct req
+        this.logout()
       },
     },
   }

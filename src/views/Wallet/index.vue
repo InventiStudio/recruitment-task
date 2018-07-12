@@ -15,7 +15,7 @@
     components: {
       Landing,
       Navbar,
-      SignOut
+      SignOut,
     },
   }
 </script>
