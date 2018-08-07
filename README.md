@@ -36,7 +36,7 @@ Kamil & Piotrek, [InventiStudio](https://inventi.studio)
 	Add new route +
 	Add singOut component + 
 	Add logout/delete sesion storage method +
-	Add css
+	Add css (pixel perfect scale 0.95)
 	Create linters config
 - [ ] As a user I am able to see all my transactions.
 - [ ] As a user I am able to see all my withdrawals (transactions where I took money out of my wallet).

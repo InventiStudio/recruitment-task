@@ -6,6 +6,13 @@
 .fs-16 {
   @include fs(nth($fs-16, 1), nth($fs-16, 2));
 }
+.fs-15 {
+  @include fs(nth($fs-15, 1), nth($fs-15, 2));
+}
+
+.fs-14 {
+  @include fs(nth($fs-14, 1), nth($fs-14, 2));
+}
 
 .fs-11 {
   @include fs(nth($fs-11, 1), nth($fs-11, 2));

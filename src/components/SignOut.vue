@@ -1,6 +1,6 @@
 <template lang="pug">
   button(@click="signOut()")
-    span.fs-15 Logout
+    span.fs-15.sign-out Sign out
 </template>
 
 <script>
@@ -23,5 +23,10 @@
 </script>
 
 <style lang="sass" scoped>
+@import "~styles/vars/fonts"
 
+.sign-out
+  margin-left: 8px
+  font-family: $ff-roboto
+  font-weight: $fw-black
 </style>

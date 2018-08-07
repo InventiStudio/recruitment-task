@@ -1,8 +1,14 @@
 <template lang="pug">
-  main
-    SignOut
-    Navbar
-    Landing
+  main.sign-in
+    .container
+      .row.justify-content-between
+        .col-2.logo
+          img.logo__part(src="~assets/combined_Shape-1.svg", alt="Wallet: InventiStudio recruitment task")
+          img.logo__part(src="~assets/combined_Shape.svg", alt="Wallet: InventiStudio recruitment task")
+          img.logo__name(src="~assets/name.svg", alt="Wallet: InventiStudio recruitment task")
+        SignOut.col-1
+      Navbar
+      Landing
 </template>
 
 <script>
@@ -19,3 +25,16 @@
     },
   }
 </script>
+<style lang="sass" scoped>
+.container
+  padding 0
+.logo
+  display: flex
+
+  &__part
+    width: 20%
+  &__name
+    margin-left: 29px
+    width: 86%
+
+</style>

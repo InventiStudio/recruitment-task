@@ -44,7 +44,7 @@ const actions = {
       ls.remove(STORAGE_AUTH_TOKEN)
       api.setHeader('x-auth-token', null)
       commit('LOGOUT')
-      router.push({ name: 'SignIn' })
+      router.push({ name: '/' })
       window.location.reload()
     } catch (err) {
       throw err
