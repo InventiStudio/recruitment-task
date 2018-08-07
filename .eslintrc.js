@@ -57,6 +57,9 @@ module.exports = {
     // enforce single quotes
     quotes: [ 2, 'single' ],
     // enforce no semicolons
-    semi: ["error", "never"]
-  }
+    semi: ["error", "never"],
+    "linebreak-style": ["error", "windows"],
+    "import/prefer-default-export": "off",
+
+  },
 }

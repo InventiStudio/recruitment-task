@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img alt="Wallet: InventiStudio recruitment task" src="design/assets/logo.svg" />
   <br>
   <br>
@@ -32,6 +32,12 @@ Kamil & Piotrek, [InventiStudio](https://inventi.studio)
 ## User stories
 - [x] As a guest I am able to sign in.
 - [ ] As a user I am able to sign out.
+	Create wallet component +
+	Add new route +
+	Add singOut component + 
+	Add logout/delete sesion storage method +
+	Add css (pixel perfect scale 0.95)
+	Create linters config
 - [ ] As a user I am able to see all my transactions.
 - [ ] As a user I am able to see all my withdrawals (transactions where I took money out of my wallet).
 - [ ] As a user I am able to see all my additions (transactions where I added money to my wallet).
